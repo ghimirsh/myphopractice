@@ -16,8 +16,8 @@ Course: ...............
         <hr>
         <div>
             <form method="get" action="page2.php">
-                Enter first number: <input type="number" name="firstnum" min="1" max="10"><br><br>
-                Enter Second number: <input type="number" name="secondnum" min="1" max="10"><br><br>
+                Enter first number: <input type="number" name="minvalue" min="1" max="1" value="1" autofocus><br><br>
+                Enter Second number: <input type="number" name="maxvalue" min="4" max="10"><br><br>
                 <input type="submit" value="Submit">
             </form>
         </div>

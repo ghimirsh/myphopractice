@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $guess=$_GET['guessnumber'];
+    $guessnumber=$_GET['guessnumber'];
     
 ?>
 <!DOCTYPE html>
@@ -21,16 +21,16 @@ Course: ...............
         <hr>
        
         <?php
-        $start=$_SESSION['firstnum'] + 1;
-        $end = $_SESSION['secondnum'] - 1;
-        $randomnum=rand($start, $end);
-//        echo $randomnum;
-        if($randomnum == $guess){
+
+        if($_SESSION['randomnumber'] == $guessnumber){
             echo "<h2>Congratulation!you win.</h2>";
         }
         else{
             echo "<h2>Sorry!. Try again!</h2>";
+            echo "<h3>the random number is ". $_SESSION['randomnumber'];
+            session_destroy();
         }
+        echo "<p><a href='index.php'>Play again?</a>"
         // put your code here
         ?>
     </body>
