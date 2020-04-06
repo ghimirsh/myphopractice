@@ -7,6 +7,7 @@ Course: ...............
 <html>
     <head>
         <meta charset="UTF-8">
+        <!--<script src="_js/script.js" defer></script>-->
         <title></title>
     </head>
     <body>
@@ -16,18 +17,23 @@ Course: ...............
         <div class="wrapper">
 
             <div class="home-main-wrapper">
-                <h2>Register</h2>
-                <form action="register1.php" method="post">
+                
+                <h2>New User Register</h2>
+                <form id='userregistration' action="register1.php" method="post">
                     <table class='register-table'>
                         <tr class="register-row">
                             <td>Username:</td>
-                            <td><input type="text" name="username" autofocus></td>
+                            <td><input id='username' type="text" name="username" autofocus><span id='username-error' class='error-message'></span></td>
                         </tr>
                         <tr>
                             <td>Password:</td>
-                            <td><input type="password" name="password"></td>
+                            <td><input id='password' type="password" name="password"><span id='password-error' class='error-message'></td>
                         </tr>
-                        <tr><td colspan="2"><input type="submit" value="Register"></td></tr>
+                        <tr>
+                            <td>Confirm Password:</td>
+                            <td><input id='confirmpassword' type="password" name="confirmpassword"><span id='confirmpassword-error' class='error-message'></td>
+                        </tr>
+                        <tr ><td colspan="2" style="text-align: center;"><input type="submit" value="Register"></td></tr>
                     </table>
                 </form>
             </div>

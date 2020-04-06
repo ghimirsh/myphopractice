@@ -18,6 +18,7 @@ Course: ...............
             <div class="home-main-wrapper">
                 <h1>Welcome to View records Page!</h1>
                 <h2>Welcome to View records Page!</h2>
+                
             </div>
             
             <br><br><br><br><br><br><br>

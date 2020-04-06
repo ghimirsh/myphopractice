@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <!DOCTYPE html>
 <!--
 Shankar Ghimire
@@ -19,25 +16,20 @@ Course: ...............
         <div class="wrapper">
      
             <div class="home-main-wrapper">
-                <h1>Welcome to Contact Us Page!</h1>
-                <h2>Welcome to Contact Us Page!</h2>
                 
+                <h2>Welcome to Log In Page!</h2>               
             </div>
+            
             <?php
-            
+            session_start();
             session_destroy();
-            header('location:index.php');
+
+            header('location:login.php');
             ?>
-            <br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br>
-           
-            
+
         </div>  
       <?php
         require_once 'footer.php';
         ?>  
-        <?php
-        // put your code here
-        ?>
     </body>
 </html>

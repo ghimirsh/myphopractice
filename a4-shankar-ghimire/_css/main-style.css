@@ -16,49 +16,84 @@ body{
 	color:	#666666;
 	background:#FFFFFF;
 }
+h1, h2{
+    text-align: center;
+}
 .wrapper{
     margin:0 20%;
-    border: 1px solid red;
+    /*height: 600px;*/
+    /*border: 1px solid red;*/
 }
 .header-main-content{
     margin:0;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
+.image-holder{
+    text-align: center;
+    /*align-content: center;*/
+}
+
+
 .company-name{
     text-align: center;
 }
+/*for navigation link*/
 nav{
-	text-align:left;
-	margin:0px 0px 0px 15px;
-	height:55px;
+    text-align:left;
+    margin:0px 0px 0px 0px;
+    height:55px;
+    /*border: 1px solid red;*/
 }
 
 nav ul{
-	margin:0px;
-	padding:0px;
-	list-style-type:none;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
 }
-
 nav ul li{
 	display:inline-block;
 }
+
 nav a{
 	width: 110px;
-	padding:10px 16.5px;
+	padding:20px 16.5px;
 	background:orange;
-        /*background-color:  ;*/
 	color:white;
 	display:block;
 	text-align: center;
 	text-decoration:none;
-        font-size: 16px;
 }
+
+/*.menu-link{
+
+	width: 110px;
+	padding:20px 16.5px;
+	background:orange;
+	color:white;
+	display:block;
+	text-align: center;
+	text-decoration:none;
+}*/
+
+
 nav a:hover{
 	background-color:#FFB424;
 	box-shadow:0px 1px 1px #666666;
 	text-decoration:underline;
 }
 
+nav a:active{
+	background-color:orange;
+}
+
+
+#selected{
+	background-color:#DB6D16;
+	box-shadow:none;
+	cursor:default;
+	font-weight:bold;
+	text-decoration:none;
+}
 .footer-main-content{
     background-color:cornsilk;
 }
@@ -69,10 +104,17 @@ table, th, td{
   border-color: lightgray;
    border-collapse: collapse;
    padding: 10px;
-   text-align: center;
+   text-align: left;
 }
 .register-table{
     margin: 0 auto;
     width: 30%;
     
+}
+
+/*Data validation error*/ 
+.error-message{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
 }

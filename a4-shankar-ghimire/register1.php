@@ -1,8 +1,16 @@
 <?php
+//echo "Testing";
     ob_start();//to avoid 'header's already sent ...' warning
     require_once 'config.php';
+//    echo "testing";
     
+    //extracts user credential from register.php
     $username=$_REQUEST['username'];
+    $password=$_REQUEST['password'];
+    $confirm_password=$_REQUEST['confirmpassword'];
+    
+    $is_valid="ok";
+    
     //encrypts the password
     $hashed_password = password_hash($_REQUEST['password'],PASSWORD_DEFAULT);
        
@@ -14,6 +22,7 @@
         //redirects to register.php page
         header('location:register.php?result=userexists');
     }else{
+        
         //inserts user info into the tblusers in database
         $query = "insert into tblusers(username,password) values ('". $username ."','". $hashed_password ."');";
         $result = mysqli_query($conn, $query);
