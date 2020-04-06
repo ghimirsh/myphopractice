@@ -1,0 +1,26 @@
+/*
+Shankar Ghimire
+StudentId:991585190
+Course: ...............
+*/
+/* 
+    Created on : Apr 5, 2020, 6:10:02 PM
+    Author     : Dell
+*/
+body{
+    margin:0 10%;
+}
+.main-header{
+    margin: 0 auto;
+    align-content: center;
+    /*background-color: #4CAF50;*/
+    /*border: 1px solid red;*/
+}
+table, th,tr{
+  border: 1px solid blue;  
+}
+#register-table{
+    margin: 0 auto;
+    width: 30%;
+    
+}
