@@ -23,12 +23,16 @@ Course: ...............
             </div>
             <div id="insert-form-box">
                 <?php
-                if (isset($_SESSION['username'])) {
+                if (!isset($_SESSION['username'])){
+                    //echo "User name is : " . $_SESSION['username'];
+                    echo "<h1>Access denied</h1>";
+                    echo "<h2>Please, Log in to enable this page</h2>";
+                }                
+                else {
                     //echo "User name is : " . $_SESSION['username'];
                     echo "Hello, " . $_SESSION['username'];
                     echo "<h1>Welcome to Insert Page!</h1> ";
-                    echo "<form action = 'inser1.php' method ='post'>";
-
+                    echo "<form action = 'insert1.php' method ='post'>";
                     echo "<table style = 'margin:0 auto; width:30%;'>";
                     echo "<tr>";
                     echo "<td>Book Title:</td>";
@@ -54,14 +58,19 @@ Course: ...............
 
                     echo" <tr>";
                     echo "<td colspan = '2' style = 'text-align:center;'>";
-
-                    if (isset($_REQUEST['result'])) {
-                        if ($_REQUEST['result'] == "success") {
+                    //echo "<h1> result is : " . $_REQUEST['result'] . "</h1>";
+                    echo "<br>";
+                    //if (isset($_REQUEST['result'])) {
+                        if (is_null($_REQUEST['result']) || $_REQUEST['result'] == "") {
+                            echo "";
+                        } 
+                        else if ($_REQUEST['result'] == "success") {
                             echo "Record has been successfully added!";
                         } else if ($_REQUEST['result'] == "fail") {
                             echo "Something went wrong. Record not added.";
                         }
-                    }
+                        unset($_REQUEST['result']);
+                    //}
 
                     echo "</td>";
                     echo "</tr>";
@@ -69,14 +78,7 @@ Course: ...............
                     echo "</table>";
                     echo "</form>";
                 }//end of if block that check $_SESSION has started or not
-                else {
-
-
-                    //echo "User name is : " . $_SESSION['username'];
-                    echo "<h1>Access denied</h1>";
-                    echo "<h2>Please, Log in to enable this page</h2>";
-                }
-                echo "<br><br>";
+              
                 ?>
 
                 </div>

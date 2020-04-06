@@ -21,9 +21,11 @@ Course: ...............
             <div>
             <?php
 //		// to display the message back to the user after log in attempt
-//		//if (isset($_REQUEST['result']))
-//                if(isset($_SESSION['loginname']))
-//		{
+		//if (isset($_REQUEST['result']))
+                if(isset($_SESSION['username']))
+		{
+                    echo "<h1>Hello," . $_SESSION['username']. "</h1>";
+                    echo "<h1>Welcome to Home Page!</h1>";
 //                    echo "testing from if";
 //			if ($_REQUEST['result'] == "success")
 //			{
@@ -32,20 +34,20 @@ Course: ...............
 //			}else{
 //                            echo "<h1>Welcome to Home Page!</h1>";
 //                        }
-//                        
-//		}
-//                else{
-//                     echo "testing from else";
-//                    echo "<h1>Welcome to Home Page!</h1>";
-//                }
-//                ?>
+                        
+		}
+                else{
+                     //echo "testing from else";
+                    echo "<h1>Welcome to Home Page!</h1>";
+                }
+                ?>
                 
             </div>
             
             <div class="home-main-wrapper">
-                <div>
+<!--                <div>
                     <h1>Welcome to Home Page!</h1>
-                </div>
+                </div>-->
                 <div class="image-holder">
                    <img class="welcome-image" src="_images/flower1.jpg" width="500px" alt="National Flower of Nepal"> 
                 </div>               
