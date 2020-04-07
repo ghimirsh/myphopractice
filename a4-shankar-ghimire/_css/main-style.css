@@ -15,12 +15,24 @@ body{
 	font-size:14px;
 	color:	#666666;
 	background:#FFFFFF;
+        /*background-color: #f2f3f7;*/
 }
 h1, h2{
     text-align: center;
 }
+
+#comany-name{
+    font-family: Algerian, 'Comics sans MS', sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
 .wrapper{
+
     margin:0 20%;
+    /*background-color: #f2f3f7;*/
+    padding-top: 0;
+    padding-bottom: 0;
     /*height: 600px;*/
     /*border: 1px solid red;*/
 }

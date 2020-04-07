@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
 ?>
 <!DOCTYPE html>
 <!--
@@ -14,7 +14,7 @@ Course: ...............
     </head>
     <body>
         <?php
-        require_once 'header.php';
+            require_once 'header.php';
         ?>
         <div class="wrapper">
 

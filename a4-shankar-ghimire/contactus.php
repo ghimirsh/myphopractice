@@ -21,13 +21,12 @@ Course: ...............
             <div class="home-main-wrapper">
                 <h1>Welcome to Contact Us Page!</h1>
                 <h2>Welcome to Contact Us Page!</h2>
+                <br>
+                <br>
+                <h2>Under Construction!</h2>
                 
             </div>
-            <?php
-            
-            session_destroy();
-            header('location:index.php');
-            ?>
+          
             <br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br>
            
