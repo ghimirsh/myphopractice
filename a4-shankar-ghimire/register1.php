@@ -5,9 +5,9 @@
     //echo "testing";
     
     //extracts user credential from register.php
-    $username=$_REQUEST['username'];
+    $user_name=$_REQUEST['user_name'];
     $password=$_REQUEST['password'];
-    $confirm_password=$_REQUEST['confirmpassword'];
+    $confirm_password=$_REQUEST['confirm_password'];
     //testing
 //    echo "user name is: ". $username;
 //    echo "password is : " . $password;
@@ -15,13 +15,13 @@
     
     $is_valid="ok";
     //data validation
-    if(empty($username)){
-        $_SESSION['username_error']="UserName cannot be blank!";
+    if(empty($user_name)){
+        $_SESSION['user_name_error']="UserName cannot be blank!";
         $error_msg="error-empty-username";
         $is_valid="no";
         //echo $is_valid;
     }else if(strlen($username) < 5) {
-        $_SESSION['username_error']="UserName must be at least 5 characters long!";
+        $_SESSION['user_name_error']="UserName must be at least 5 characters long!";
         $error_msg="error-min-length-username";
         $is_valid="no";
 //        echo $is_valid;
@@ -32,7 +32,7 @@
         $is_valid="no";
     }else if(strlen($password)< 5) {
         $_SESSION['new_user_name']= $username;
-        $_SESSION['username_error']="Password must be at least 5 characters long!";
+        $_SESSION['user_name_error']="Password must be at least 5 characters long!";
         $error_msg="error-minlength-password";
         $is_valid="no";
     }

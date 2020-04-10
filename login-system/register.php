@@ -18,20 +18,29 @@ Course: ...............
             <div>                         
                 <h2>Register</h2>
             </div>
-	<form action="register1.php" method="post">
+	<form action="" method="post" id="userregisterform" name="userregisterform">
 		<table id='register-table'>
 			<tr>
 				<td>Username:</td>
-				<td><input type="text" name="username" autofocus></td>
+				<td><input id="username" name="username" type="text" name="username" autofocus>
+                                    <span id="usernameerror"></span>
+                                </td>
 			</tr>
 			<tr>
 				<td>Password:</td>
-				<td><input type="password" name="password"></td>
+				<td><input id="password" name="password" type="password" name="password">
+                                    <span id="passworderror"></span>
+                                </td>
 			</tr>
 			<tr><td colspan="2"><input type="submit" value="Register"></td></tr>
 		</table>
 	</form>
-
+            
+        </div>
+        <div>
+            <p id="testform">
+                
+            </p>
         </div>
         <?php
             //to display the user back to the user
@@ -47,5 +56,6 @@ Course: ...............
             }
         }
         ?>
+        <script src="_js/script1.js"></scirpt>
     </body>
 </html>

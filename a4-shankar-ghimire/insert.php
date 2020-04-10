@@ -10,7 +10,7 @@ Course: ...............
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>New Book Record Entry</title>
     </head>
     <body>
         <?php
@@ -90,5 +90,7 @@ Course: ...............
             <?php
             require_once 'footer.php';
             ?>  
+        <script src="_js/script1.js"></script>
+        
     </body>
 </html>

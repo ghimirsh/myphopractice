@@ -7,7 +7,7 @@
     $hashed_password = password_hash($_REQUEST['password'],PASSWORD_DEFAULT);
        
     //checks if the username alreadys exists or not
-    $query = "select username from tblusers where username='$username';";
+    $query = "select username from tblusertest1 where username='$username';";
     $result = mysqli_query($conn, $query);
     //if a row is fetched, then username exists
     if(mysqli_num_rows($result)){
@@ -15,7 +15,7 @@
         header('location:register.php?result=userexists');
     }else{
         //inserts user info into the tblusers in database
-        $query = "insert into tblusers(username,password) values ('". $username ."','". $hashed_password ."');";
+        $query = "insert into tblusertest1(username,password) values ('". $username ."','". $hashed_password ."');";
         $result = mysqli_query($conn, $query);
         if($result == 1){
             header('location:register.php?result=success');

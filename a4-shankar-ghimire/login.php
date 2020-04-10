@@ -17,7 +17,9 @@ Course: ...............
      
             <div class="home-main-wrapper">
                 
-                <h2>Welcome to Log In Page!</h2>               
+                <h2>Welcome to Log In Page!</h2>    
+                <p>Test User ID: test</p>
+                <p>Test User Password: test</p>
             </div>
             <div id="login-form-box">
                 <form action="login1.php" method="post">
