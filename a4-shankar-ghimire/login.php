@@ -37,8 +37,8 @@ Course: ...............
         <div id="wrapper">
            <div id="home-main-wrapper">               
                 <h2>Welcome to Log In Page!</h2>    
-                <h3>Test User ID: test</h3>
-                <h3>Test User Password: test</h3>
+                <h3>Test User ID: guest</h3>
+                <h3>Test User Password: guest</h3>
             
                 <form id="login_form" clas="login_form" action="login1.php" method="post">
                     <table id="login-table" style="margin:0 auto; width:30%;">

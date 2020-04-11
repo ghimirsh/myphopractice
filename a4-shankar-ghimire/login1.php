@@ -28,7 +28,8 @@
             $hashed_password = $row['password'];    // read the hashed password from the row
             if (password_verify($login_password, $hashed_password)) {
                 // create the session for the user
-                $_SESSION['user_name'] = $row['username'];
+                //$_SESSION['user_name'] = $row['username'];
+                $_SESSION['user_name'] = $login_name;
                 //echo "testing user name after matching password : " . $user_name;
                 // redirect to member's page
                 header('location:index.php');                
