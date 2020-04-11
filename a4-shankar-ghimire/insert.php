@@ -11,6 +11,7 @@ Course: ...............
     <head>
         <meta charset="UTF-8">
         <title>New Book Record Entry</title>
+        <script src="_js/script_book.js" defer></script>
     </head>
     <body>
         <?php
@@ -33,10 +34,13 @@ Course: ...............
                     echo "Hello, " . $_SESSION['user_name'];
                     echo "<h1>Welcome to Insert Page!</h1> ";
                     echo "<form id='book_entry' name='book_entry' action = 'insert1.php' method ='post'>";
-                    echo "<table style = 'margin:0 auto; width:30%;'>";
+                    echo "<table style = 'margin:0 auto; width:50%;'>";
                     echo "<tr>";
                     echo "<td>Book Title:</td>";
-                    echo "<td><input type = 'text' id='book_title' name = 'book_title' size = '50' autofocus></td>";
+                    echo "<td>";
+                    echo "<input type = 'text' id='book_title' name = 'book_title' size = '50' autofocus>";
+                    echo "<span id='book_title_error' class='error_message' style='color:red;font-weight:bold;'></span>";
+                    echo "</td>";
                     echo "</tr>";
                     echo "<tr>";
                     echo "<td>Subject:</td>";
@@ -52,7 +56,10 @@ Course: ...............
                     echo "</tr>";
                     echo "<tr>";
                     echo "<td>Price:</td>";
-                    echo "<td><input type = 'text' id='price' name = 'price'></td>";
+                    echo "<td>";
+                    echo "<input type = 'text' id='price' name = 'price'>";
+                    echo "<span id='price_error' class='price_error' style='color:red;font-weight:bold;'></span>";
+                    echo "</td>";
                     echo "</tr>";
                     echo "<tr><td colspan = '2'><input type = 'submit' value = 'Insert Record'></td></tr>";
 
@@ -60,7 +67,8 @@ Course: ...............
                     echo "<td colspan = '2' style = 'text-align:center;'>";
                     //echo "<h1> result is : " . $_REQUEST['result'] . "</h1>";
                     echo "<br>";
-                    if (isset($_REQUEST['result'])) {
+                    if (isset($_REQUEST['result']) ) {
+                        echo "testing";
                         if (is_null($_REQUEST['result']) || $_REQUEST['result'] == "") {
                             echo "";
                         } 

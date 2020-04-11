@@ -1,5 +1,5 @@
 <?php
-//echo "Testing";
+    //echo "Testing";
     ob_start();//to avoid 'header's already sent ...' warning
     require_once 'config.php';
     
@@ -11,11 +11,11 @@
     $authors = $_REQUEST['authors'];
     $price = $_REQUEST['price'];
     
-//    echo "<br>Book Title :". $book_title;
-//    echo "<br>Subject :". $subject;
-//    echo "<br>Publisher ". $publisher;
-//    echo "<br>Author :". $authors;
-//    echo "<br>Price :". $price;
+    //echo "<br>Book Title :". $book_title;
+    //echo "<br>Subject :". $subject;
+    //echo "<br>Publisher ". $publisher;
+    //echo "<br>Author :". $authors;
+    //echo "<br>Price :". $price;
     $is_valid="ok";
 //   echo "testing";
 //   
