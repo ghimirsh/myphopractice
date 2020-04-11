@@ -31,7 +31,7 @@ Course: ...............
                 }                
                 else {
                     //echo "User name is : " . $_SESSION['user_name'];
-                    echo "Hello, " . $_SESSION['user_name'];
+                    echo "<h4>Hello, " . $_SESSION['user_name']. "<h4>";
                     echo "<h1>Welcome to Insert Page!</h1> ";
                     echo "<form id='book_entry' name='book_entry' action = 'insert1.php' method ='post'>";
                     echo "<table style = 'margin:0 auto; width:50%;'>";
@@ -68,7 +68,7 @@ Course: ...............
                     //echo "<h1> result is : " . $_REQUEST['result'] . "</h1>";
                     echo "<br>";
                     if (isset($_REQUEST['result']) ) {
-                        echo "testing";
+                        //echo "testing";
                         if (is_null($_REQUEST['result']) || $_REQUEST['result'] == "") {
                             echo "";
                         } 

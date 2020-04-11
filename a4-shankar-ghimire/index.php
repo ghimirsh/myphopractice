@@ -24,9 +24,9 @@ Course: ...............
 		//if (isset($_REQUEST['result']))
                 if(isset($_SESSION['user_name']))
 		{
-                    echo "<h1>Hello," . $_SESSION['user_name']. "</h1>";
-                    echo "<h1>Welcome to Home Page!</h1>";
-//                    echo "testing from if";
+                    echo "<h1>Hello, " . $_SESSION['user_name']. "</h1>";
+                    echo "<h1>Welcome to Home Page</h1>";
+                    //echo "testing from if";
 //			if ($_REQUEST['result'] == "success")
 //			{
 //				echo "<h1>Hello," . $_SESSION['user_name']. "</h1>";
@@ -38,7 +38,7 @@ Course: ...............
 		}
                 else{
                      //echo "testing from else";
-                    echo "<h1>Welcome to Home Page!</h1>";
+                    echo "<h1>Welcome to Home Page</h1>";
                 }
                 ?>
                 

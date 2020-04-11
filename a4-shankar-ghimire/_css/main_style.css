@@ -17,7 +17,7 @@ body{
 	background:#FFFFFF;
         /*background-color: #f2f3f7;*/
 }
-h1, h2{
+h1, h2, h3{
     text-align: center;
 }
 
@@ -169,3 +169,17 @@ nav a:active{
 	text-align: center;
 	text-decoration:none;
 }*/
+
+/*log in page section*/ 
+#login-form-box{
+    text-align: center;
+}
+#login-table{
+    margin: 0 auto;
+    width:  50%;
+    padding: 0;
+    
+}
+.login-table-header{
+    width: 50px;
+}

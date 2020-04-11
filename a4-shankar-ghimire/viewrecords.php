@@ -23,13 +23,13 @@ Course: ...............
             <div class="home-main-wrapper">
                 
                 <?php
-                if (!isset($_SESSION['username'])) {
+                if (!isset($_SESSION['user_name'])) {
                     //echo "User name is : " . $_SESSION['username'];
                     echo "<h1>Access denied</h1>";
                     echo "<h2>Please, Log in to enable this page</h2>";
                 } 
                 else {
-                    echo "Hello, ". $_SESSION['username'];
+                    echo "<h4>Hello, ". $_SESSION['user_name']. "</h4>";
                     echo "<h2>Book Records </h2>";
                     //to make connection with the database
                     require_once 'config.php';

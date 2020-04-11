@@ -27,8 +27,8 @@
 //    echo "<br>Connection : " . $conn;
 //    echo "<br>Testing";
     $result = mysqli_query($conn, $query);
-    echo "<br>result: ". $result;
-    echo "<br>Testing";
+    //echo "<br>result: ". $result;
+    //echo "<br>Testing";
     // check if 1 record was added
     if ($result > 0)
     {
