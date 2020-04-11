@@ -11,7 +11,7 @@ Course: ...............
     <head>
         <meta charset="UTF-8">
         <title>Book Details Records</title>
-        <link rel="stylesheet" href="_css/main-style.css">
+        <link rel="stylesheet" href="_css/main_style.css">
         
     </head>
     <body>

@@ -10,6 +10,7 @@ Course: ...............
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="_css/main_style.css">
         <script src="_js/script.js" defer></script>
         <title></title>
     </head>
@@ -36,7 +37,7 @@ Course: ...............
                     //echo "<p>New user was not registered</p>";
                 }else if($_REQUEST['result'] == "validation_fail"){
                     $new_user_name= $_SESSION['new_user_name'];
-                    $username_error = $_SESSION['user_name_error'];
+                    $user_name_error = $_SESSION['user_name_error'];
                     $password_error = $_SESSION['password_error'];
                     $confirm_password_error = $_SESSION['confirm_password_error'];
                     unset($_SESSION['new_user_name']);
@@ -53,36 +54,47 @@ Course: ...............
                 
                 <h2>New User Register</h2>
                 <?php
-//                echo "<br>user name error". $username_error;
+//                echo "<br>user name error". $user_name_error;
 //            echo "<br>password error" . $password_error;
 //            echo "<br> confirm password error ". $confirm_password_error;
                 ?>
                 <form id="user_registration" name="user_registration" action="register1.php" method="post">
                     <table class='register-table'>
                         <tr class="register-row">
-                            <td>Username:</td>
-                            <td>
-                                <input id="user_name" type="text" name="user_name" value="<?=$new_user_name; ?>" autofocus>
-                                <span id="user_name_error" class='error_message'><?php echo $user_name_error; ?></span>
+                            <td class="register-row-header">
+                                Username:
+                            </td>
+                            <td class="register-row-input">
+                                <input id="user_name" type="text" name="user_name" value="<?=$new_user_name; ?>" autofocus>                                                        
+                                <span id="user_name_error" class="error_message" style="color:red;font-weight: bold;" ><?php echo $user_name_error; ?></span>
                             </td>
                         </tr>
                         <tr>
-                            <td>Password:</td>
-                            <td>
+                            <td class="register-row-header">
+                                Password:
+                            </td>
+                            <td class="register-row-input">
                                 <input id="password" type="password" name="password">
-                                <span id='password_error' class='error_message'><?php echo $password_error; ?></span>
+                                <span id='password_error' class="error_message" style="color:red;font-weight: bold;"><?php echo $password_error; ?></span>
                             </td>
                         </tr>
                         <tr>
-                            <td>Confirm Password:</td>
+                            <td class="register-row-header">
+                                Confirm Password:
+                            </td>
                             <td>
                                 <input id='confirm_password' type="password" name="confirm_password">
-                                <span id='confirm_password_error' class='error_message'><?php echo $confirm_password_error; ?></span>
+                                <span id='confirm_password_error' class='error_message' style="color:red;font-weight: bold;"><?php echo $confirm_password_error; ?></span>                   
                             </td>
                         </tr>
-                        <tr ><td colspan="2" style="text-align: center;"><input type="submit" value="Register"></td></tr>
                         <tr>
-                            <td colspan="2" style="font-weight: bold;">
+                            <td></td>
+                            <td><input type="submit" value="Register"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
                                 <?php
                                     echo $record_insert_message;
                                 ?>
@@ -96,7 +108,7 @@ Course: ...............
             <?php
                 //clears the variables after printing
                 $new_user_name = "";
-                //$username_error = "";
+                //$user_name_error = "";
                 //$password_error = "";
                 //$confirm_password_error = "";
             ?>

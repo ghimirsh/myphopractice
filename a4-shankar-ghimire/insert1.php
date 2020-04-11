@@ -5,7 +5,7 @@
     
     
     //extracts data of books from insert.php 
-    $book_title=$_REQUEST['booktitle'];
+    $book_title=$_REQUEST['book_title'];
     $subject=$_REQUEST['subject'];
     $publisher=$_REQUEST['publisher'];
     $authors = $_REQUEST['authors'];

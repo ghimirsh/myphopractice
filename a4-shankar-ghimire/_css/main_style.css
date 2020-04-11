@@ -76,16 +76,6 @@ nav a{
 	text-decoration:none;
 }
 
-/*.menu-link{
-
-	width: 110px;
-	padding:20px 16.5px;
-	background:orange;
-	color:white;
-	display:block;
-	text-align: center;
-	text-decoration:none;
-}*/
 
 
 nav a:hover{
@@ -110,27 +100,42 @@ nav a:active{
     background-color:cornsilk;
 }
 
-/*For Register.php*/ 
-table, th, td{
-  border: 1px solid ;  
-  border-color: lightgray;
-   border-collapse: collapse;
-   padding: 10px;
-   text-align: left;
-}
-.register-table{
-    margin: 0 auto;
-    width: 30%;
-    
-}
-
 /*Data validation error*/ 
 .error-message{
     color: red;
     font-size: 14px;
     font-weight: bold;
+    border: 0px solid ;  
+}
+/*For Register.php*/ 
+/*table, th, td{
+  border: 1px solid ;  
+  border-color: lightgray;
+   border-collapse: collapse;
+   padding: 0px;
+   text-align: left;
+}*/
+.register-table{
+    margin: 0 auto;
+    width: 70%; 
+    border: 0px;
+}
+.register-table, th, td{
+    /*border: 0;*/
+    
+}
+.register-row-header{
+    width: 140px;
 }
 
+.register-row-input{
+    /*width: 200px;*/
+}
+
+
+#user_register_h2{
+    color:red;
+}
 
 /*for view Records page*/
 .table-holder{
@@ -152,4 +157,15 @@ table, th, td{
 
 /*#books tr:th-child(even) {
   background: blue;
+}*/
+
+/*.menu-link{
+
+	width: 110px;
+	padding:20px 16.5px;
+	background:orange;
+	color:white;
+	display:block;
+	text-align: center;
+	text-decoration:none;
 }*/

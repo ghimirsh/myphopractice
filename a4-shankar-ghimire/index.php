@@ -11,7 +11,7 @@ Course: ...............
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <link rel="stylesheet" type="text/css" href="_css/main-style.css">
+        <link rel="stylesheet" type="text/css" href="_css/main_style.css">
     </head>
     <body>
         <?php
@@ -22,14 +22,14 @@ Course: ...............
             <?php
 //		// to display the message back to the user after log in attempt
 		//if (isset($_REQUEST['result']))
-                if(isset($_SESSION['username']))
+                if(isset($_SESSION['user_name']))
 		{
-                    echo "<h1>Hello," . $_SESSION['username']. "</h1>";
+                    echo "<h1>Hello," . $_SESSION['user_name']. "</h1>";
                     echo "<h1>Welcome to Home Page!</h1>";
 //                    echo "testing from if";
 //			if ($_REQUEST['result'] == "success")
 //			{
-//				echo "<h1>Hello," . $_SESSION['username']. "</h1>";
+//				echo "<h1>Hello," . $_SESSION['user_name']. "</h1>";
 //                                echo "<h1>Welcome to Home Page!</h1>";
 //			}else{
 //                            echo "<h1>Welcome to Home Page!</h1>";

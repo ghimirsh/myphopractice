@@ -23,11 +23,11 @@ Course: ...............
             </div>
             <div id="insert-form-box">
                 <?php
-                    if(!isset($_SESSION['username'])){
+                    if(!isset($_SESSION['user_name'])){
                         echo "Access denied";
                     }
                     else{
-                        echo "Welcome, ". $_SESSION['username'];
+                        echo "Welcome, ". $_SESSION['user_name'];
                     }
                 ?>
 <!--                <form action="inser1.php" method="post">

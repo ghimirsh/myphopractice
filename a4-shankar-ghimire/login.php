@@ -26,7 +26,7 @@ Course: ...............
                     <table style="margin:0 auto; width:30%;">
                         <tr>
                             <td>Username:</td>
-                            <td><input type="text" name="username" autofocus></td>
+                            <td><input type="text" name="user_name" autofocus></td>
                         </tr>
                         <tr>
                             <td>Password:</td>

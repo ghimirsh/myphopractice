@@ -23,36 +23,36 @@ Course: ...............
             </div>
             <div id="insert-form-box">
                 <?php
-                if (!isset($_SESSION['username'])){
-                    //echo "User name is : " . $_SESSION['username'];
+                if (!isset($_SESSION['user_name'])){
+                    //echo "User name is : " . $_SESSION['user_name'];
                     echo "<h1>Access denied</h1>";
                     echo "<h2>Please, Log in to enable this page</h2>";
                 }                
                 else {
-                    //echo "User name is : " . $_SESSION['username'];
-                    echo "Hello, " . $_SESSION['username'];
+                    //echo "User name is : " . $_SESSION['user_name'];
+                    echo "Hello, " . $_SESSION['user_name'];
                     echo "<h1>Welcome to Insert Page!</h1> ";
-                    echo "<form action = 'insert1.php' method ='post'>";
+                    echo "<form id='book_entry' name='book_entry' action = 'insert1.php' method ='post'>";
                     echo "<table style = 'margin:0 auto; width:30%;'>";
                     echo "<tr>";
                     echo "<td>Book Title:</td>";
-                    echo "<td><input type = 'text' name = 'booktitle' size = '50' autofocus></td>";
+                    echo "<td><input type = 'text' id='book_title' name = 'book_title' size = '50' autofocus></td>";
                     echo "</tr>";
                     echo "<tr>";
                     echo "<td>Subject:</td>";
-                    echo "<td><input type = 'text' name = 'subject'></td>";
+                    echo "<td><input type = 'text' id='subject' name = 'subject'></td>";
                     echo "</tr>";
                     echo "<tr>";
                     echo "<td>Publisher:</td>";
-                    echo "<td><input type = 'text' name = 'publisher'></td>";
+                    echo "<td><input type = 'text' id='publisher' name = 'publisher'></td>";
                     echo "</tr>";
                     echo "<tr>";
                     echo "<td>Author(s):</td>";
-                    echo "<td><input type = 'text' name = 'authors'></td>";
+                    echo "<td><input type = 'text' id='authors' name = 'authors'></td>";
                     echo "</tr>";
                     echo "<tr>";
                     echo "<td>Price:</td>";
-                    echo "<td><input type = 'text' name = 'price'></td>";
+                    echo "<td><input type = 'text' id='price' name = 'price'></td>";
                     echo "</tr>";
                     echo "<tr><td colspan = '2'><input type = 'submit' value = 'Insert Record'></td></tr>";
 
@@ -60,7 +60,7 @@ Course: ...............
                     echo "<td colspan = '2' style = 'text-align:center;'>";
                     //echo "<h1> result is : " . $_REQUEST['result'] . "</h1>";
                     echo "<br>";
-                    //if (isset($_REQUEST['result'])) {
+                    if (isset($_REQUEST['result'])) {
                         if (is_null($_REQUEST['result']) || $_REQUEST['result'] == "") {
                             echo "";
                         } 
@@ -70,7 +70,7 @@ Course: ...............
                             echo "Something went wrong. Record not added.";
                         }
                         unset($_REQUEST['result']);
-                    //}
+                    }
 
                     echo "</td>";
                     echo "</tr>";

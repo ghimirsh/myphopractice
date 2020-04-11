@@ -11,7 +11,7 @@ Course: ...............
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <link rel="stylesheet" type="text/css" href="_css/main-style.css">
+        <link rel="stylesheet" type="text/css" href="_css/main_style.css">
     </head>
     <body>
         <div class="wrapper">       
@@ -34,7 +34,7 @@ Course: ...............
                             if($selected_page == "index"){
                                 echo "<li style='padding:0 2px;' ><a  id='selected' href='index.php'>Home</a></li>";
                                 echo "<li style='padding:0 2px;' ><a  href='register.php'>Register</a></li>";
-                                if(!isset($_SESSION['username'])){
+                                if(!isset($_SESSION['user_name'])){
                                     echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
                                 }
                                 else{
@@ -49,7 +49,7 @@ Course: ...............
                                 echo "<li style='padding:0 2px;'><a  href='index.php'>Home</a></li>";
                                 echo "<li style='padding:0 2px;'><a id='selected' href='register.php'>Register</a></li>";
                                 //echo "<li style='padding:0 2px;'><a href='login.php'>Log In</a></li>";
-                                if(!isset($_SESSION['username'])){
+                                if(!isset($_SESSION['user_name'])){
                                     echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
                                 }
                                 else{
@@ -63,7 +63,7 @@ Course: ...............
                                 echo "<li style='padding:0 2px;'><a  href='index.php'>Home</a></li>";
                                 echo "<li style='padding:0 2px;'><a  href='register.php'>Register</a></li>";
                                 //echo "<li style='padding:0 2px;'><a id='selected' href='login.php'>Log In</a></li>";
-                                if(!isset($_SESSION['username'])){
+                                if(!isset($_SESSION['user_name'])){
                                     echo "<li style='padding:0 2px;'><a id='selected' href='login.php'>Log In</a></li>";
                                 }
                                 else{
@@ -77,7 +77,7 @@ Course: ...............
                                 echo "<li style='padding:0 2px;'><a  href='index.php'>Home</a></li>";
                                 echo "<li style='padding:0 2px;'><a  href='register.php'>Register</a></li>";
                                 //echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
-                                if(!isset($_SESSION['username'])){
+                                if(!isset($_SESSION['user_name'])){
                                     echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
                                 }
                                 else{
@@ -91,7 +91,7 @@ Course: ...............
                                 echo "<li style='padding:0 2px;'><a  href='index.php'>Home</a></li>";
                                 echo "<li style='padding:0 2px;'><a  href='register.php'>Register</a></li>";
                                 //echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
-                                if(!isset($_SESSION['username'])){
+                                if(!isset($_SESSION['user_name'])){
                                     echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
                                 }
                                 else{
@@ -105,7 +105,7 @@ Course: ...............
                                 echo "<li style='padding:0 2px;'><a  href='index.php'>Home</a></li>";
                                 echo "<li style='padding:0 2px;'><a  href='register.php'>Register</a></li>";
                                 //echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
-                                if(!isset($_SESSION['username'])){
+                                if(!isset($_SESSION['user_name'])){
                                     echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
                                 }
                                 else{
@@ -119,7 +119,7 @@ Course: ...............
                                 echo "<li style='padding:0 2px;'><a  href='index.php'>Home</a></li>";
                                 echo "<li style='padding:0 2px;'><a  href='register.php'>Register</a></li>";
                                 //echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
-                                if(!isset($_SESSION['username'])){
+                                if(!isset($_SESSION['user_name'])){
                                     echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";
                                 }
                                 else{
