@@ -87,7 +87,7 @@ Course: ...............
                                 echo "<li style='padding:0 2px;'><a href='viewrecords.php'>View Records</a></li>";
                                 echo "<li style='padding:0 2px;'><a href='contactus.php'>Contact Us</a></li>";  
                             }
-                            else if($selected_page == "viewrecords"){
+                            else if($selected_page == "viewrecords" || $selected_page == "update_book" ){
                                 echo "<li style='padding:0 2px;'><a  href='index.php'>Home</a></li>";
                                 echo "<li style='padding:0 2px;'><a  href='register.php'>Register</a></li>";
                                 //echo "<li style='padding:0 2px;'><a  href='login.php'>Log In</a></li>";

@@ -17,7 +17,7 @@ body{
 	background:#FFFFFF;
         /*background-color: #f2f3f7;*/
 }
-h1, h2, h3{
+h1, h2{
     text-align: center;
 }
 
@@ -76,6 +76,16 @@ nav a{
 	text-decoration:none;
 }
 
+/*.menu-link{
+
+	width: 110px;
+	padding:20px 16.5px;
+	background:orange;
+	color:white;
+	display:block;
+	text-align: center;
+	text-decoration:none;
+}*/
 
 
 nav a:hover{
@@ -100,13 +110,6 @@ nav a:active{
     background-color:cornsilk;
 }
 
-/*Data validation error*/ 
-.error-message{
-    color: red;
-    font-size: 14px;
-    font-weight: bold;
-    border: 0px solid ;  
-}
 /*For Register.php*/ 
 /*table, th, td{
   border: 1px solid ;  
@@ -132,7 +135,13 @@ nav a:active{
     /*width: 200px;*/
 }
 
-
+/*Data validation error*/ 
+.error-message{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0px solid ;  
+}
 #user_register_h2{
     color:red;
 }
@@ -159,36 +168,3 @@ nav a:active{
   background: blue;
 }*/
 
-/*.menu-link{
-
-	width: 110px;
-	padding:20px 16.5px;
-	background:orange;
-	color:white;
-	display:block;
-	text-align: center;
-	text-decoration:none;
-}*/
-
-/*log in page section*/ 
-#login-form-box{
-    text-align: center;
-}
-#login-table{
-    margin: 0 auto;
-    width:  50%;
-    padding: 0;
-    
-}
-.login-table-header{
-    width: 50px;
-}
-
-a{
-    text-decoration: none;
-    color: blue;
-}
-a:hover{
-    background-color: springgreen;
-    color:red;
-}

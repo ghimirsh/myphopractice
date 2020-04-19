@@ -31,6 +31,14 @@ Course: ...............
                 else {
                     echo "<h4>Hello, ". $_SESSION['user_name']. "</h4>";
                     echo "<h2>Book Records </h2>";
+                    if(isset($_REQUEST['update_result'])){
+                        if($_REQUEST['update_result']== 'success'){
+                            echo "<h3>Book Record has been updated successfully.</h3>";
+                        }
+                        else{
+                             echo "<h3>Update Record operation got FAILED!</h3>";
+                        }
+                    }
                     //to make connection with the database
                     require_once 'config.php';
                     
@@ -44,26 +52,32 @@ Course: ...............
                         echo "<table id='books'>";
                         echo "<tr>";
                         //echo "<th>S.N.</th>";
-                        echo "<th>Book ID</th>";
+                        echo "<th>S.N.</th>";
                         echo "<th>Book Title</th>";
                         echo "<th>Subject</th>";
                         echo "<th>Publisher</th>";
-                        echo "<th>Authoer(s)</th>";
+                        echo "<th>Author(s)</th>";
                         echo "<th>Price</th>";
+                        echo "<th style='background-color:white';>&nbsp;</th>";
+                        echo "<th style='background-color:white';>&nbsp;</th>";
                         echo "</tr>";
-                        $i = 1;     // To print the row numbers
+                        $i = 0;     // To print the row numbers
                         while($row = mysqli_fetch_assoc($result))
                         {
+                            $i++;
                             echo "<tr>";
                             //echo "<td>$i</td>";
-                            echo "<td>" . $row['id'] . "</td>";
+                            //echo "<td>" . $row['id'] . "</td>";
+                            echo "<td>" . $i . "</td>";
                             echo "<td>" . $row['title'] . "</td>";
                             echo "<td>" . $row['subject'] . "</td>";
                             echo "<td>" . $row['publisher'] . "</td>";
                             echo "<td>" . $row['authors'] . "</td>";
                             echo "<td>" . $row['price'] . "</td>";
+                            echo "<td style='background-color:white;valign=center;'>&nbsp;<a href='update_book.php?id=". $row['id']  ."'> Edit &nbsp;</a> </td>";
+                            echo "<td style='background-color:white; valign=center;'>&nbsp; <a href='delete_book.php?id=". $row['id']   ."'> Delete &nbsp; </a> </td>";
                             echo "</tr>";
-                            $i++;
+                            
                          }//end of while loop
                          echo "<tr>";
                          echo "<td colspan='6' style='text-align:center';>". $i   ." Record(s) found.</td>";

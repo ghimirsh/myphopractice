@@ -32,7 +32,7 @@
                 $_SESSION['user_name'] = $login_name;
                 //echo "testing user name after matching password : " . $user_name;
                 // redirect to member's page
-                header('location:index.php');                
+                header('location:viewrecords.php');                
             }
             else{
                 //unset($_SESSION['user_name']);
