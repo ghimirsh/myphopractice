@@ -39,6 +39,14 @@ Course: ...............
                              echo "<h3>Update Record operation got FAILED!</h3>";
                         }
                     }
+                    if(isset($_REQUEST['delete_result'])){
+                        if($_REQUEST['delete_result']== 'success'){
+                            echo "<h3>Book Record has been deleted successfully.</h3>";
+                        }
+                        else{
+                             echo "<h3>Delete Record operation got FAILED!</h3>";
+                        }
+                    }
                     //to make connection with the database
                     require_once 'config.php';
                     
